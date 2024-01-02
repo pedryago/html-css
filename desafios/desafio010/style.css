@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+header{
+    margin-top: 0%;
+    background-image: linear-gradient(360deg, #1A5C38, #268851,#37C878);
+    text-align: center;
+    width: 103%;
+    margin: -2.6%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Sora:wght@300;400;500;600&display=swap');
+
+header > h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Sora', sans-serif;
+    padding-top: 10px;
+}
+
+header > pre > p{
+    background-image: none;
+    font-size: 16px;
+    color: white;
+    font-style: normal;
+}
+
+nav{
+    text-align: left;
+    color: white;
+    padding-left: 45px;
+    padding-bottom: 12px;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    border-radius: 10px;
+    box-shadow: #2FA866;
+}
+
+.button{
+    padding: 10px;
+    color: white;
+    border: 0;
+    font-size: 14px;
+}
+
+.button:hover{
+    display: inline;
+    background-color: #43df896e;
+}
+
+.button:visited{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #84E1AD;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    padding: 4px 15px;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.411);
+    text-indent: 20px;
+}
+
+main  a{
+    color: #1A5A37;
+}
+
+main a:hover{
+    background-color: #1A5C38;
+    color: white;
+}
+
+main a::after{
+    content: ' 🔗';
+}
+
+h2{
+    background-image: linear-gradient(to right, #95dbb5, #E4F6EC, white);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+p > img{
+    align-items: center;
+}
+
+div{
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf);
+}
+
+.font-android {
+    font-family: 'Android', sans-serif;
+    text-indent: 0px;
+}
+
+.video{
+    background-color: #1A5C38;
+    width: 830px;
+    margin-left: -15px;
+    margin-top: 15px;
+    height: 400px;
+}
+
+div > iframe{
+    padding: 46px;
+}
+
+article.aprender{
+    background-color: #C5EBD6;
+    border-radius: 10px 10px;
+}
+
+p.final{
+    padding: 8px;
+}
+
+#final{
+    background-color: #2FA866;
+    border-radius: 10px 10px 0px 0px;
+    padding: 8px;
+    text-indent: 0px;
+    color: white;
+}
+
+#history::before{
+    text-decoration: none;
+}
+
+section.final > h1{
+    margin: 4px;
+}
+
+table{
+    border: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: '✔ ';
+}
+
+.principal{
+    margin-top: 28px;
+}
+
+footer{
+    width: 103%;
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+    margin: 7px 0px 2px 0px;
+    font-size: 12px;
+}
+
+footer a::after{
+    content: ' 🔗';
+}
+
+footer  a{
+    color: white;
+}
+
+footer a:hover{
+    background-color: white;
+    color: black;
+}
+
+.enfase{
+    color: #1A5A37;
+}
+
+span{
+    text-shadow: 5px 5px 5px, rgba(131, 120, 120, 0.473);
+}
