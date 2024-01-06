@@ -4,34 +4,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
-body{
-    background-color: white;
-    
-}
-
 *{
     margin: 0px;
     padding: 0px;
     font-size: 1em;
 }
 
+body, html{
+    min-height: 100vh;
+    background-color: white;
+}
+
 
 header{
     background-color: black;
     color: white;
-    height: 270px;
-    width: 100%;
     text-align: center;
 }
 
 header > h1{
-    padding-top: 30px;
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: 'Passion One', sans-serif;
-    font-size: 136px;
+    font-size: 10vw;
 }
 
 header > p{
-    padding: 10px;
+    padding-bottom: 50px;
     font-family: Verdana, sans-serif;
     font-size: 16px;
 }
@@ -47,7 +46,7 @@ header a:hover{
 
 main  p{
     
-    width: 40%;
+    width: 47%;
     padding: 0px 20px 25px 25px;
     margin: 10px 20px 20px 20px;
     font-family: 'Sriracha', cursive;
@@ -55,13 +54,32 @@ main  p{
     text-align: left;
 }
 
-main p.par{
-    background-color: rgba(0, 0, 0, 0.404);
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 3.5vw;
+    /* line-height: 2em;*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(61, 60, 60);
     color: white;
 }
 
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.404);
+}
 
-div#q2{
+
+/*div#q2{
     background-image: url(../imagens/background001.jpg);
     background-position: center;
     background-size: cover;
@@ -73,7 +91,7 @@ div#q4{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
+}*/
 
 footer{
     background-color: black;
