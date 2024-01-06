@@ -12,6 +12,7 @@ body{
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 
@@ -45,18 +46,19 @@ header a:hover{
 }
 
 main  p{
-    display: flex;
+    
     width: 40%;
     padding: 25px;
+    margin: 20px;
     font-family: 'Sriracha', cursive;
     font-size: 47px;
     text-align: left;
 }
 
-.container{
-    text-align: left;
+main p.par{
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
 }
-
 
 div#q2{
     background-image: url(../imagens/background001.jpg);
