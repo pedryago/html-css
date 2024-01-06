@@ -48,8 +48,8 @@ header a:hover{
 main  p{
     
     width: 40%;
-    padding: 25px;
-    margin: 20px;
+    padding: 0px 20px 25px 25px;
+    margin: 10px 20px 20px 20px;
     font-family: 'Sriracha', cursive;
     font-size: 47px;
     text-align: left;
@@ -59,6 +59,7 @@ main p.par{
     background-color: rgba(0, 0, 0, 0.404);
     color: white;
 }
+
 
 div#q2{
     background-image: url(../imagens/background001.jpg);
