@@ -1,0 +1,39 @@
+		Iframes
+
+Iframe é uma "caixa" inline.
+
+Ex.: 
+
+<body>
+    <h1>Testando o suso de iframe</h1>
+    <p>Acessando o site do
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        
+        para aprender a programar.</p>
+        <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal, pena que não funciona dentro d iframe.</p>
+</body>
+
+** Alguns sites não permitem que seus conteúdos apareçam em iframes.
+
+---------------------------------------------------------
+
+- A maioria dos navegadores não aceitam iframes. Basta colocar um texto ou um link alternativo para aparecer caso o iframe não funcione. Ex.:
+
+	<p>O repositório do Guanabara no <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a>  // Texto ou link alternativo
+        </iframe> também é bem legal!</p>
+
+- Tamanho padrão de um iframe: 300x150. Porém podemos alterar usando o height e o width no proprio iframe ou usando CSS. Caso haja em ambos, prevalece as CSS.
+Ex.:
+	<p>Acessando o site do
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="450">
+            <a href="https://www.cursoemvideo.com" target="_blank"> Curso em Vídeo</a>
+        </iframe>
+
+- frameborder="0"  // Sem borda
+  frameborder="1"  // Borda de 1px
+
+* Mas pode alterar a borda utilizando CSS
+
