@@ -5,12 +5,13 @@ Iframe é uma "caixa" inline.
 Ex.: 
 
 <body>
-    <h1>Testando o suso de iframe</h1>
+    <h1>Testando o uso de iframe</h1>
     <p>Acessando o site do
         
         <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
         
         para aprender a programar.</p>
+
         <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal, pena que não funciona dentro d iframe.</p>
 </body>
 
@@ -36,4 +37,19 @@ Ex.:
   frameborder="1"  // Borda de 1px
 
 * Mas pode alterar a borda utilizando CSS
+
+
+- Páginas locais dentro do iframe
+
+<ul>
+    <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li> // Usar o nome do frame onde deseja abrir esta página usando o target
+    <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+    <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+</ul>
+
+<iframe src="" id="tela" name="frame">  // Da um nome a tag
+        Infelizmente seu navegador não é compatível com isso!
+</iframe>
+
+* Vai abrir uma página dentro do iframe sempre que o usuário clicar nele.
 
