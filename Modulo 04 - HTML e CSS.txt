@@ -53,3 +53,50 @@ Ex.:
 
 * Vai abrir uma página dentro do iframe sempre que o usuário clicar nele.
 
+-------------------------------------------------------------------
+
+		Formulários
+
+Ex.:
+	form>
+        	<p>Nome: <input type="text" name="nome" id="nome"></p>
+        	<p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        	<input type="submit" value="Enviar">
+    	</form>
+
+* input de tipo text:
+	precisam das propriedades name e id;
+* input de tipo submit:
+	a propriedade value é o nome que ficara no botão;
+
+- Propriedade autocomplete:
+	<form autocomplete="off">  // Desabilita
+
+- Enviar o formulário para o local desejado:
+	Ex.: <form action="cadastro.php">  // Ao clicar no input submit
+
+- Relacionando o <label> ao seu input:
+	<form action="cadastro.php" autocomplete="off">
+        	<p><label for="inome">Nome:</label> 
+            	<input type="text" name="nome" id="inome"></p>
+        	<p><label for="isobrenome">Sobrenome:</label> 
+            	<input type="text" name="sobrenome" id="isobrenome"></p>
+        	<input type="submit" value="Enviar">
+    	</form>
+   *Na propriedade 'for' indica o id do input
+
+- Métodos GET e POST
+
+	GET = padrão. Os dados inseridos no formulário aparece na URL
+	POST = Oo dados inseridos no formulário não aparecem no formulário.
+	Ex.: <form action="cadastro.php" method="POST" autocomplete="off">
+
+*Sobre o GET:
+	Quando os dados não forem sensíveis;
+	Quando os dados não utrapassarem 3000 bytes (mais ou menos 3 mil letras);
+
+*Sobre o POST:
+	Quando os dados forem sensíveis;
+	Quando não quiser que os dados apareçam na URL;
+	Se os dados tiverem mais de 3000 bytes;
+	Quando precisar fazer envio de arquivos;
