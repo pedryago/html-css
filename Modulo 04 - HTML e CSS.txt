@@ -216,3 +216,32 @@ Ex.:
 
 	- input:checkbox .....
 	- input:radio ........
+
+- Elementos color, range e file:
+
+	<form action="" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+		// Por padrão a cor varia de navegador para nvegador, mas podemos alterar usando o value="";
+
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+		// Por padrão o mínimo e máximo vem de 1-100 (mas pode variar de acordo com o navegador), mas podemos alterar usando o min="" e max="";
+		// Por padrão irá iniciar no valor mais ao meio (mas pode variar de acordo com o navegador), mas podemos alterar usando o value="";
+
+	 <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+		// O input do tipo file permite que o usuário escolha um arquivo do armazenamento do dispositivo e envie esse arquivo através de um formulário HTML.
+		// Quando utilizar este input:file o metodo a ser usado é o POST.
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
