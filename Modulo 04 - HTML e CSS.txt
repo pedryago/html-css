@@ -189,3 +189,30 @@ Ex.:
 	- pattern="" ........ Tentar realizar um padrão a ser digitado em determinado campo. Ex.: pattern="^[1-9]{2}[0-9]{4, 5}[0-9]{4}$"
 	- <fieldset> ........ Tag para agrupar um conjunto de campos ou formulários
 	- <legend> .......... Adicionar uma legenda ao fieldset
+
+- Checkbox e radio button:
+
+	<form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+		// name="": deve ter o mesmo nome pra que se possa marcar apenas uma opção;
+		// checkbox:radio: não há como desmarcar, a não ser que escolha a outra opção;
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+        </fieldset>
+		// Pode marcar todos possíveis, como também desmarcá-los;
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+	- input:checkbox .....
+	- input:radio ........
