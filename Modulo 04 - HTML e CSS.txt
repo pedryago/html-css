@@ -160,3 +160,32 @@ Ex.:
 	- max="10" .............. Valor máximo
 	- step="0.1" ............ Passo
 	- value="2024-02-05" .... Já exibir um valor como padrão
+
+- Formulários com telefone e e-mail:
+	
+	<form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[1-9]{2}[0-9]{4, 5}[0-9]{4}$" required>
+            </p>
+            <!-- Estudar mais sobre RegEx (Expressões Regulares) -->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+	- pattern="" ........ Tentar realizar um padrão a ser digitado em determinado campo. Ex.: pattern="^[1-9]{2}[0-9]{4, 5}[0-9]{4}$"
+	- <fieldset> ........ Tag para agrupar um conjunto de campos ou formulários
+	- <legend> .......... Adicionar uma legenda ao fieldset
