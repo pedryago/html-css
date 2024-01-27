@@ -385,3 +385,16 @@ Ex.:
 	Observe que o atributo "for" no elemento <output> tem uma função puramente semântica e não afeta o comportamento do elemento <output>. Você pode omiti-lo se 		quiser, mas incluí-lo pode tornar seu código mais fácil de entender.
 
 	Especificar a relação entre o resultado do cálculo e os elementos usados no cálculo ajuda a tornar o código mais legível e autoexplicativo... Assim como foi 		feito no nosso exemplo ( for="n1 n2" ).
+
+__________________________________________________________________
+
+		Media Queries em CSS - Cap. 25
+
+- Media query, nada mais é do que uma estrutura do CSS que permite aplicar estilizações especificas para uma página web de acordo com certas condições, fazendo assim com que esta página possa se adequar ao layout de tela em diferentes tamanhos e tipos de mídia.
+
+Principais media types:
+
+media	="print"   	-> para impressoras;
+		="screen"	-> para monitores de computadores, tablets e smartphones;
+		="handheld"	-> para dispositivos de mão;
+		="all"		-> para todos os tipos de mídia.
