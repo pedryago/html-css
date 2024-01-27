@@ -476,4 +476,14 @@ Ex:	@charset "UTF-8";
  *Obs: Atalho para identar o código dentro do VS Code: Shift + Alt + F
 
 
+-----------------------------------------------------------------
 
+		Mobile First
+
+- Mobile first é um projeto que faz a criação de projetos web e sites primeiro em dispositivos móveis, para depois fazer adaptações para o desktop e outras plataformas, ao contrário do que ainda acontece na maioria das vezes.
+
+Vantagens:
+	- Melhor ranquemento no Google
+	- Melhor experiência ao usuário
+	- Aumento da credibilidade da marca
+	- Otimização no carregamento das páginas
