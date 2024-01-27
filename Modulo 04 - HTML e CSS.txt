@@ -394,7 +394,17 @@ __________________________________________________________________
 
 Principais media types:
 
-media	="print"   	-> para impressoras;
+media		="print"   	-> para impressoras;
 		="screen"	-> para monitores de computadores, tablets e smartphones;
 		="handheld"	-> para dispositivos de mão;
 		="all"		-> para todos os tipos de mídia.
+
+Ex.: ex026	<link rel="stylesheet" href="estilos/tela.css" media="screen">
+    		<link rel="stylesheet" href="estilos/impressora.css" media="print">
+
+		Iniciamos o Media Querie em <head>, abaixo de <title>, criamos dois link's para CSS desta maneira;
+		<link rel="stylesheet" href="estilos/tela.css" media="screen">
+		<link rel="stylesheet" href="estilos/impressora.css" media="screen">
+		Nesse caso criamos os css dentro da pasta estilos, que está dentro da pasta do exercício, assim cada exercício deste capítulo terão seus próprios 			estilos.
+
+		Cada uma das CSS ficaram com suas respectivas configurações, sendo assim o media="screen" com suas configurações de visualização no navegador, e quando 		solicitamos o print ou seja a impressão da página ele puxa o media="print".
