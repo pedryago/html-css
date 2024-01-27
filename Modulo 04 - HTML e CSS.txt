@@ -388,7 +388,9 @@ Ex.:
 
 __________________________________________________________________
 
-		Media Queries em CSS - Cap. 25
+			Media Queries em CSS - Cap. 25
+
+	link da apostila: https://github.com/gustavoguanabara/html-css/blob/fe6653ecdafa5b7275a5ecb4c36a8ca14f5043e7/aulas-pdf/25%20-%20Media%20Queries.pdf
 
 - Media query, nada mais é do que uma estrutura do CSS que permite aplicar estilizações especificas para uma página web de acordo com certas condições, fazendo assim com que esta página possa se adequar ao layout de tela em diferentes tamanhos e tipos de mídia.
 
@@ -408,3 +410,30 @@ Ex.: ex026	<link rel="stylesheet" href="estilos/tela.css" media="screen">
 		Nesse caso criamos os css dentro da pasta estilos, que está dentro da pasta do exercício, assim cada exercício deste capítulo terão seus próprios 			estilos.
 
 		Cada uma das CSS ficaram com suas respectivas configurações, sendo assim o media="screen" com suas configurações de visualização no navegador, e quando 		solicitamos o print ou seja a impressão da página ele puxa o media="print".
+
+Media Features:
+
+		Basicamente, para mudar a orientação (tela em pé ou deitada) os computadores vão pegar pela resolução de tela. 
+		Se a altura tiver maior que a largura, ele está como portrait (retrato).
+		Se a largura tiver maior que a altura, ela tá como 'landscape' (paisagem).
+
+		Para ficar mais fácil de entender e fixar, imagine vc tirando uma foto de uma PAISAGEM (landscape), vc tiraria foto com o celular DEITADO, certo? 
+		E se você tivesse tirando um retrato (tipo uma selfie), fica bem mais fácil com o celular em pé (portrait), certo?
+		Acho que imaginando assim, pode ser que fique mais fácil de fixar. :D
+
+		a configuração media="all" vai servir para todos os dispositivos, pois algumas configurações se repetem.
+    		<link rel="stylesheet" href="estilos/style.css" media="all">
+
+		media types sao escritos dentro das aspas normais de media=" "
+		ex: 	media ="screen"     tela
+      			media="print"       impressora
+      			media="all"         configurações gerais
+
+		mas as media features são escritas dentro das aspas e dentro de (parênteses), logo após os media types.
+		media="screen and (orientation: portrait)"
+
+    		<link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    		<link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+		Importante: media types nao tem parênteses, media features tem parênteses isoladamente, ou seja, se tivermos três media fetures, teremos 3 entre 			parênteses.
+
